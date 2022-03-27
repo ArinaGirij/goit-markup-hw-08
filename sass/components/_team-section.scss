@@ -1,6 +1,11 @@
 .section-team {
   background-color: $body-background;
 
+  @media screen and (min-width: 1200px) {
+    background: $body-background;
+    padding: 94px 0;
+  }
+
   &__title {
     margin-bottom: 50px;
     color: $title-black;
@@ -10,10 +15,37 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 
   &__list {
     display: flex;
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      flex-direction: initial;
+      align-items: inherit;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      list-style: none;
+      display: flex;
+
+      padding: 0px;
+
+      margin-bottom: 0;
+    }
   }
 
   &__item {
@@ -22,6 +54,19 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 536px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 428px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+    }
   }
 
   &__item:last-child {
@@ -30,6 +75,10 @@
 
   &__team {
     padding: 30px 32px;
+
+    @media screen and (max-width: 480px) {
+      background-color: $background-white;
+    }
   }
 
   &__name {
@@ -66,6 +115,14 @@
 
   &__li:last-child {
     margin-right: 0px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 0px;
+    }
   }
 
   &__medialink {
