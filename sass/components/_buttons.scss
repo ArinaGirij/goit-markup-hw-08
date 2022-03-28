@@ -16,14 +16,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     border: 0px;
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      justify-content: center;
-      margin-right: 10px;
-      margin-bottom: 50px;
-      list-style: none;
-    }
   }
 
   &__button {
@@ -56,17 +48,5 @@
 
   &__item {
     margin-right: 8px;
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 8px;
-    }
-  }
-
-  &__item:last-child {
-    margin-right: 0px;
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 0px;
-    }
   }
 }
