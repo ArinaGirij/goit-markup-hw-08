@@ -1,7 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: $title-black;
+  color: #212121;
 }
+
 ul,
 h1,
 h2,
@@ -10,37 +11,38 @@ h4,
 h5,
 p {
   list-style: none;
-
   padding: 0;
   margin: 0;
 }
-// img {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }
 
 .container {
   min-width: 320px;
   max-width: 1170px;
   padding: 0 15px;
   margin: auto;
+}
 
-  @media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
+  .container {
     max-width: 767px;
     padding: 0 15px;
     margin: 0;
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .container {
     max-width: 1199px;
     padding: 0 15px;
     margin: 0;
   }
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .container {
     max-width: none;
     padding: 0 15px;
     margin: 0;
   }
 }
+/*# sourceMappingURL=main.css.map */
