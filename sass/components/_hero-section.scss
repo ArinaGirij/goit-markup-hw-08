@@ -1,0 +1,54 @@
+.hero-section {
+  width: 480px;
+  height: 400px;
+  left: 0px;
+  top: 60px;
+  background: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 360px;
+    height: 84px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    /* or 162% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $background-white;
+  }
+
+  &__button {
+    padding: 10px 32px;
+    min-width: 200px;
+
+    width: 200px;
+    height: 50px;
+
+    background: $accent-color;
+    color: $background-white;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: $button-index-hover;
+  }
+}

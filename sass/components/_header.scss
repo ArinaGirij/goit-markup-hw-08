@@ -1,0 +1,25 @@
+.header {
+  padding: 16px;
+  border: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: centre;
+
+  &__link {
+    color: $accent-color;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+
+  &__logo {
+    color: $title-black;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+}
