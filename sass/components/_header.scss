@@ -1,11 +1,31 @@
 .header {
   padding: 16px;
   border: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    border-bottom: 1px solid $border-header;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+    border-bottom: 1px solid $border-header;
+  }
 }
 
 .header-container {
   display: flex;
   align-items: centre;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 
   &__link {
     color: $accent-color;
@@ -13,6 +33,18 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: $accent-color;
+    }
+
+    &.current {
+      color: $accent-color;
+    }
   }
 
   &__logo {
@@ -21,5 +53,66 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.03em;
+  }
+}
+.header-contacts {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    color: $primary-text-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    list-style: none;
+    font-weight: 500;
+    padding: 0px;
+    margin: 21px 15px 11px 84px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    color: $primary-text-color;
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+    padding: 0px;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+
+    @media screen and (max-width: 1200px) {
+    }
+
+    &:hover {
+      fill: $accent-color;
+    }
+  }
+  &__phone {
+    width: 10px;
+    height: 16px;
+    fill: $primary-text-color;
+    margin-right: 10px;
+
+    @media screen and (max-width: 1200px) {
+    }
+
+    &:hover {
+      fill: $accent-color;
+    }
   }
 }
