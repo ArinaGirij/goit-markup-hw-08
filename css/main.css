@@ -1520,7 +1520,6 @@ img {
 
 .footer__link {
   display: block;
-  margin-left: 163px;
   margin-bottom: 20px;
   color: #2196f3;
   text-decoration: none;
@@ -1529,11 +1528,13 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
   .footer__link {
     display: block;
+    text-align: start;
     margin-bottom: 20px;
     color: #2196f3;
     text-decoration: none;
@@ -1553,8 +1554,16 @@ img {
   margin-bottom: 9px;
   font-style: normal;
   list-style: none;
-  text-align: center;
   font-weight: 400;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    margin-bottom: 9px;
+    font-style: normal;
+    list-style: none;
+    font-weight: 400;
+  }
 }
 
 .footer__item:last-child {
@@ -1607,6 +1616,7 @@ img {
 @media screen and (min-width: 1200px) {
   .join {
     margin-left: 70px;
+    text-align: start;
   }
 }
 
@@ -1709,6 +1719,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-follow-modal {
     margin-bottom: 20px;
+    text-align: start;
   }
 }
 
@@ -1747,6 +1758,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-modal-input {
+    margin: auto;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1799,6 +1811,13 @@ img {
 }
 
 address {
+  max-width: 768px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  address {
+    text-align: start;
+  }
 }
 /*# sourceMappingURL=main.css.map */
