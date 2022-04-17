@@ -1,6 +1,11 @@
 .container-footer {
   display: block;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-webstudio {
@@ -24,6 +29,19 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+
+      margin-bottom: 20px;
+      color: $accent-color;
+      text-decoration: none;
+      font-family: Raleway;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+    }
   }
 
   &__logo {
@@ -83,6 +101,10 @@
   margin-top: 60px;
   align-items: center;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 
   &__title {
     margin-bottom: 20px;
@@ -148,6 +170,11 @@
   margin-right: 0px;
   align-items: center;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: 0px;
+  }
 }
 
 .footer-follow-modal {
@@ -158,6 +185,10 @@
   text-transform: uppercase;
 
   color: $background-white;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-form-label {
@@ -188,6 +219,18 @@
   outline: none;
   color: $background-white;
   background-color: rgba(33, 150, 243, 0);
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    color: $background-white;
+    background-color: rgba(33, 150, 243, 0);
+  }
 }
 
 .footer-submit {

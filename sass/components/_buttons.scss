@@ -3,6 +3,11 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
+
   &__primary {
     border-radius: 4px;
     padding: 6px 22px;
