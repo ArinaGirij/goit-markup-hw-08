@@ -941,6 +941,7 @@ img {
 
 .section-team {
   background-color: #f5f4fa;
+  width: 480px;
   padding: 60px 0;
   margin: 0;
 }
@@ -976,6 +977,7 @@ img {
 
 .section-team__list {
   display: block;
+  width: 450px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1166,6 +1168,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 480px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1185,6 +1188,10 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.section-clients__item {
+  margin-bottom: 30px;
 }
 
 .section-clients__item:not(:last-child) {
