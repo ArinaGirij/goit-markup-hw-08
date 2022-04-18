@@ -27,12 +27,29 @@
           >Web<span class="header-container__logo">Studio</span></a
         >
         <nav>
-          <!-- <button type="button" class="menu-button is-open">
-            <svg width height aria-label="">
-              <use></use>
-              <use></use>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="40"
+              height="40"
+              fill="currentColor"
+              aria-label="Переключатель моб меню"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use
+                class="icon-cross"
+                href="./images/symbol-defs.svg#icon-close_mobile"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-menu_mobile"
+              ></use>
             </svg>
-          </button> -->
+          </button>
           <ul class="header-list">
             <li class="header-list__item">
               <a href="" class="header-list__link current">Студия</a>
@@ -582,5 +599,12 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
