@@ -26,17 +26,19 @@
         <a href="./index.html" class="header-container__link"
           >Web<span class="header-container__logo">Studio</span></a
         >
+
         <nav>
           <button
-            class="menu-toggle js-open-menu"
+            type="button"
+            class="menu-button is-open"
             aria-expanded="false"
-            aria-controls="mobile-menu"
+            data-menu-button
           >
             <svg
               width="40"
               height="40"
               fill="currentColor"
-              aria-label="Переключатель моб меню"
+              aria-label="Переключатель мобильного меню"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -62,6 +64,7 @@
             </li>
           </ul>
         </nav>
+
         <ul class="header-contacts">
           <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="header-contacts__link">
