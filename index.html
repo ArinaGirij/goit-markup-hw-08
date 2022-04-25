@@ -27,43 +27,26 @@
           >Web<span class="header-container__logo">Studio</span></a
         >
 
-        <nav>
-          <button
-            type="button"
-            class="menu-button is-open"
-            aria-expanded="false"
-            data-menu-button
-          >
-            <svg
-              width="40"
-              height="40"
-              fill="currentColor"
-              aria-label="Переключатель мобильного меню"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use
-                class="icon-cross"
-                href="./images/symbol-defs.svg#icon-close_mobile"
-              ></use>
-              <use
-                class="icon-menu"
-                href="./images/symbol-defs.svg#icon-menu_mobile"
-              ></use>
-            </svg>
-          </button>
-          <ul class="header-list">
-            <li class="header-list__item">
-              <a href="" class="header-list__link current">Студия</a>
-            </li>
-            <li class="header-list__item">
-              <a href="./portfolio.html" class="header-list__link">Портфолио</a>
-            </li>
-            <li class="header-list__item">
-              <a href="" class="header-list__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <button type="button" class="menu-button" data-menu-open>
+				<svg aria-label="переключатель мобильного меню" width="40" height="40">
+					<use class="icon-menu" href="./images/symbol-fefs.svg#icon-menu-mobile"></use>
+				</svg>
+			</button>
+
+			<div class="menu-container" data-menu>
+				<div class="menu-mobile">
+					<button type="button" class="menu-container__button" data-menu-close>
+						<svg aria-label="переключатель мобильного меню" width="40" height="40">
+							<use class="icon-cross" href="./images/symbol-fefs.svg#icon-cross-mobile"></use>
+						</svg>
+					</button>
+					<nav class="header-nav">
+						<ul class="header-list__nav">
+							<li class="header-list__li"><a href="./index.html" class="header-list__item current">Студия</a></li>
+							<li class="header-list__li"><a href="./portfolio.html" class="header-list__item ">Портфолио</a></li>
+							<li class="header-list__li"><a href="#" class="header-list__item">Контакты</a></li>
+						</ul>
+					</nav>
 
         <ul class="header-contacts">
           <li class="header-contacts__item">
