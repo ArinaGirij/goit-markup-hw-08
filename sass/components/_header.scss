@@ -21,8 +21,7 @@
   align-items: centre;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     justify-content: inherit;
     margin: 21px 15px 11px 84px;
     align-items: center;
