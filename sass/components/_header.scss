@@ -1,12 +1,15 @@
+header {
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: 1px solid #ececec;
+  padding: 16px;
+  border: 1px solid $border-header;
   position: relative;
 
   @media screen and (min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding: 26px;
     border-bottom: 1px solid $border-header;
   }
 
@@ -30,6 +33,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+    margin: 0;
   }
 
   &__link {
