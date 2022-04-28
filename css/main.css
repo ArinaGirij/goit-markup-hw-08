@@ -360,8 +360,7 @@ img {
 .hero-section {
   width: 480px;
   height: 400px;
-  left: 0px;
-  top: 60px;
+  margin: 0 auto;
   background: rgba(47, 48, 58, 0.4);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.svg);
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.svg);
@@ -386,7 +385,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    width: 1600px;
+    width: 1200px;
     height: 100%;
     margin: 0 auto;
     background: #2f303a;
@@ -400,10 +399,8 @@ img {
 
 .hero-section__title {
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 360px;
-  height: 84px;
   font-weight: 900;
   font-size: 26px;
   line-height: 42px;
@@ -412,6 +409,12 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section__title {
+    width: 369px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -958,6 +961,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .section-work {
     position: relative;
+    margin-top: 94px;
     padding-top: 0px;
     padding-bottom: 94px;
   }
@@ -1148,7 +1152,6 @@ img {
 @media screen and (min-width: 768px) {
   .section-team__item {
     width: 354px;
-    height: 536px;
     margin-bottom: 30px;
     margin-right: 30px;
   }
@@ -1951,6 +1954,135 @@ address {
 @media screen and (min-width: 1200px) {
   address {
     text-align: start;
+  }
+}
+
+.menu-container {
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+  transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+}
+
+@media (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    left: 0;
+    margin: 0 auto;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    background-color: #ffffff;
+  }
+  .menu-container.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    opacity: 1;
+  }
+}
+
+.menu-mobile {
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+  transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+}
+
+@media (max-width: 767px) {
+  .menu-mobile {
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 480px;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header-menu__button {
+  position: absolute;
+  top: 21px;
+  right: 15px;
+  background-color: #ffffff;
+}
+
+.menu-button {
+  margin: 0;
+  padding: 10px 0;
+  background-color: transparent;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button:focus {
+  fill: #2196f3;
+}
+
+@media (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container__button:focus {
+  fill: #2196f3;
+}
+
+@media (min-width: 768px) {
+  .menu-container__button {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

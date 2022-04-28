@@ -1,8 +1,8 @@
 .hero-section {
   width: 480px;
   height: 400px;
-  left: 0px;
-  top: 60px;
+
+  margin: 0 auto;
   background: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(
       to bottom,
@@ -32,7 +32,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1600px;
+    width: 1200px;
     height: 100%;
     margin: 0 auto;
     background: $footer-background;
@@ -49,11 +49,9 @@
 
   &__title {
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 
     width: 360px;
-    height: 84px;
     font-weight: 900;
     font-size: 26px;
     line-height: 42px;
@@ -63,6 +61,10 @@
     text-transform: uppercase;
 
     color: $background-white;
+
+    @media screen and (min-width: 768px) {
+      width: 369px;
+    }
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;
