@@ -15,6 +15,15 @@
 .footer {
   background-color: $footer-background;
   padding: 60px 0;
+  width: 480px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 
   &__link {
     display: block;
@@ -216,7 +225,7 @@
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin: 20px 15px;
+  margin: 20px 0px;
 
   width: 450px;
   height: 50px;

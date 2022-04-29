@@ -1,6 +1,14 @@
 header {
+  min-width: 480px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+
   @media screen and (min-width: 1200px) {
     display: block;
+    min-width: 1200px;
+    max-width: none;
   }
 }
 .header {
@@ -26,7 +34,6 @@ header {
   @media screen and (min-width: 768px) {
     display: inline-flex;
     justify-content: inherit;
-    margin: 21px 15px 11px 84px;
     align-items: center;
   }
 

@@ -23,6 +23,7 @@ img {
 
 .container {
   width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -41,9 +42,21 @@ img {
   }
 }
 
+header {
+  min-width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    min-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   header {
     display: block;
+    min-width: 1200px;
+    max-width: none;
   }
 }
 
@@ -84,7 +97,6 @@ img {
     -webkit-box-pack: inherit;
         -ms-flex-pack: inherit;
             justify-content: inherit;
-    margin: 21px 15px 11px 84px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -365,6 +377,7 @@ img {
 }
 
 .hero-section {
+  min-width: 100%;
   width: 480px;
   height: 400px;
   margin: 0 auto;
@@ -392,7 +405,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    width: 1600px;
+    width: 1200px;
+    max-width: none;
     height: 100%;
     margin: 0 auto;
     background: #2f303a;
@@ -1659,6 +1673,19 @@ img {
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
+  width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+  }
 }
 
 .footer__link {
@@ -1885,7 +1912,7 @@ img {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin: 20px 15px;
+  margin: 20px 0px;
   width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
