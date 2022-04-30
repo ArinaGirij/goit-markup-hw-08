@@ -84,9 +84,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: centre;
-      -ms-flex-align: centre;
-          align-items: centre;
 }
 
 @media screen and (min-width: 768px) {
@@ -121,6 +118,12 @@ header {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -2072,11 +2075,12 @@ address {
 }
 
 .menu-button {
-  margin: 0;
+  margin-left: 276px;
   padding: 10px 0;
   background-color: transparent;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
 }
 
 .menu-button:focus {
