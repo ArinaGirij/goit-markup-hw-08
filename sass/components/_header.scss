@@ -17,12 +17,12 @@ header {
   position: relative;
 
   @media screen and (min-width: 768px) {
-    padding: 26px;
+    padding: 0;
     border-bottom: 1px solid $border-header;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 25px 0;
+    padding: 0;
     border-bottom: 1px solid $border-header;
   }
 }

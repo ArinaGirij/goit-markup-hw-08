@@ -68,14 +68,14 @@ header {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding: 26px;
+    padding: 0;
     border-bottom: 1px solid #ececec;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header {
-    padding: 25px 0;
+    padding: 0;
     border-bottom: 1px solid #ececec;
   }
 }
@@ -1673,18 +1673,18 @@ img {
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
-  width: 480px;
+  min-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
