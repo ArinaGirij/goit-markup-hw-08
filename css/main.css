@@ -61,7 +61,7 @@ header {
 }
 
 .header {
-  padding: 16px;
+  padding: 0;
   border: 1px solid #ececec;
   position: relative;
 }
@@ -111,7 +111,6 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0;
   }
 }
 
@@ -315,13 +314,6 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 60px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .header-nav {
-    margin-right: 305px;
   }
 }
 
@@ -330,6 +322,13 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-list__nav {
+    padding-left: 93px;
   }
 }
 
@@ -347,6 +346,7 @@ header {
 
 .header-list__item {
   font-weight: 500;
+  font-size: 14px;
   position: relative;
   color: #212121;
   display: block;
@@ -419,14 +419,24 @@ header {
 }
 
 .hero-section__title {
-  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
+  padding-bottom: 30px;
+  padding-top: 118px;
   width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 42px;
   /* or 162% */
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;

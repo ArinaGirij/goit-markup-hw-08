@@ -12,7 +12,7 @@ header {
   }
 }
 .header {
-  padding: 16px;
+  padding: 0;
   border: 1px solid $border-header;
   position: relative;
 
@@ -40,7 +40,6 @@ header {
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    margin: 0;
   }
 
   &__link {
@@ -212,16 +211,19 @@ header {
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
-    margin-right: 60px;
   }
 
   @media (min-width: 1200px) {
-    margin-right: 305px;
   }
 }
 .header-list__nav {
   @media (min-width: 768px) {
     display: flex;
+    padding-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 93px;
   }
 }
 
@@ -241,6 +243,7 @@ header {
 
 .header-list__item {
   font-weight: 500;
+  font-size: 14px;
   position: relative;
   color: $title-black;
   display: block;
