@@ -410,6 +410,16 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 768px;
     background: #2f303a;
     padding: 118px 204px;
@@ -474,7 +484,8 @@ img {
     font-weight: 900;
     color: #ffffff;
     width: 696px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 40px;
     text-align: center;
     letter-spacing: 0.06em;
