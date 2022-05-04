@@ -1521,7 +1521,7 @@ img {
 }
 
 .card-set {
-  margin-top: 50px;
+  margin-top: 20px;
   display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1531,6 +1531,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .card-set {
+    margin-top: -30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1543,6 +1544,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .card-set {
+    margin-top: -30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1555,7 +1557,7 @@ img {
 
 .card-set__item {
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   -ms-flex-preferred-size: calc(100% / 3 - 30px);
       flex-basis: calc(100% / 3 - 30px);
 }
@@ -1563,7 +1565,7 @@ img {
 @media screen and (min-width: 768px) {
   .card-set__item {
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
   }
@@ -1572,7 +1574,7 @@ img {
 @media screen and (min-width: 1200px) {
   .card-set__item {
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
   }
