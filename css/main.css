@@ -125,11 +125,11 @@ img {
   color: #2196f3;
 }
 
-.header-container.current {
+.header-container__link.current {
   color: #2196f3;
 }
 
-.header-container.current::after {
+.header-container__link.current::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -351,6 +351,7 @@ img {
 }
 
 .header-list__item {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   position: relative;
@@ -380,6 +381,10 @@ img {
   .header-list__item {
     padding: 32px 0;
   }
+}
+
+.header-list__item.current {
+  color: #2196f3;
 }
 
 .hero-section {
