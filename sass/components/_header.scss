@@ -112,6 +112,10 @@
   &__item:last-child {
     margin-right: 0px;
   }
+  &__item:hover,
+  &__item:focus {
+    fill: $accent-color;
+  }
 }
 
 .header-contacts {

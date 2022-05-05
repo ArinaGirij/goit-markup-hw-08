@@ -192,6 +192,10 @@ img {
   margin-right: 0px;
 }
 
+.header-list__item:hover, .header-list__item:focus {
+  fill: #2196f3;
+}
+
 .header-contacts {
   display: none;
 }
@@ -537,13 +541,20 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop-modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop-modal__button {
@@ -649,11 +660,18 @@ img {
 }
 
 .form-field input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   margin: 0;
   padding: 15px 0;
   padding-left: 42px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-field input {
+    width: 448px;
+    height: 40px;
+  }
 }
 
 .paragraph-modal {
@@ -750,10 +768,28 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .conditions-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
 }
 
 .conditions-input {
@@ -818,7 +854,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  width: 448px;
+  width: 370px;
   height: 120px;
 }
 
@@ -1156,12 +1192,18 @@ img {
 }
 
 .section-team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
   font-size: 36px;
   line-height: 42px;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .section-team__title {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1178,7 +1220,6 @@ img {
 }
 
 .section-team__list {
-  margin-top: -30px;
   display: block;
 }
 
@@ -1331,7 +1372,6 @@ img {
   line-height: 42px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1352,6 +1392,7 @@ img {
 }
 
 .section-clients__list {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1384,11 +1425,8 @@ img {
 }
 
 .section-clients__item {
-  margin-bottom: 30px;
-}
-
-.section-clients__item:not(:last-child) {
-  margin-right: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .section-clients__links {
