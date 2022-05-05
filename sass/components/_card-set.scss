@@ -126,7 +126,7 @@
     color: $background-white;
   }
   &__cards {
-    background-size: auto;
+    background-size: contain;
 
     padding-top: 20px;
     padding-bottom: 20px;

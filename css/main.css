@@ -1730,7 +1730,7 @@ img {
 }
 
 .card-set__cards {
-  background-size: auto;
+  background-size: contain;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
