@@ -1,4 +1,5 @@
 .card-set {
+  width: 450px;
   margin-top: 20px;
   display: block;
   flex-wrap: wrap;
@@ -6,6 +7,7 @@
   margin-bottom: calc(-1 * 30px);
 
   @media screen and (min-width: 768px) {
+    width: 768px;
     margin-top: -30px;
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +16,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     margin-top: -30px;
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +126,8 @@
     color: $background-white;
   }
   &__cards {
+    background-size: auto;
+
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 24px;

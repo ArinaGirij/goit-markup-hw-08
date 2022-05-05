@@ -1570,6 +1570,7 @@ img {
 }
 
 .card-set {
+  width: 450px;
   margin-top: 20px;
   display: block;
   -ms-flex-wrap: wrap;
@@ -1580,6 +1581,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .card-set {
+    width: 768px;
     margin-top: -30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1593,6 +1595,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .card-set {
+    width: 1200px;
     margin-top: -30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1719,6 +1722,7 @@ img {
 }
 
 .card-set__cards {
+  background-size: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
