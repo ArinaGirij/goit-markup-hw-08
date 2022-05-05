@@ -858,6 +858,12 @@ textarea {
   height: 120px;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-field-comment textarea {
+    width: 448px;
+  }
+}
+
 .modal-button {
   width: 200px;
   height: 50px;
@@ -978,11 +984,8 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
-  width: 450px;
+  margin: 0 auto;
   height: 120px;
-  left: 15px;
-  top: 520px;
   background: #f5f4fa;
   border-radius: 4px;
 }
@@ -1004,6 +1007,8 @@ textarea {
 }
 
 .section-features__title {
+  text-align: center;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -1015,12 +1020,14 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .section-features__title {
+    text-align: start;
     width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-features__title {
+    text-align: start;
     width: 270px;
     font-size: 14px;
     line-height: 16px;
@@ -1028,6 +1035,10 @@ textarea {
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
+}
+
+.section-features__title:last-child {
+  margin-bottom: 0;
 }
 
 .section-features__text {
