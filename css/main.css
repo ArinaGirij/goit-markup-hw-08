@@ -2010,6 +2010,7 @@ img {
 }
 
 .footer-follow-modal {
+  padding-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -2020,6 +2021,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-follow-modal {
+    padding-bottom: 0px;
     margin-bottom: 20px;
     text-align: start;
   }
@@ -2042,6 +2044,7 @@ img {
 
 .footer-modal-input {
   padding-left: 16px;
+  margin-bottom: 20px;
   width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
