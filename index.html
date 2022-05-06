@@ -26,7 +26,8 @@
         <a href="./index.html" class="header-container__link"
           >Web<span class="header-container__logo">Studio</span></a
         >
-        <button type="button" class="menu-button" data-menu-open>
+        <button type="button" class="menu-button" 
+     aria-controls="menu-container" data-menu-open>
     <svg aria-label="переключатель мобильного меню" width="40" height="40">
      <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_mobile"></use>
     </svg>
@@ -34,8 +35,8 @@
 
    <div class="menu-container" id="menu-container" data-menu>
     <div class="menu-mobile">
-     <button type="button" class="menu-container__button" aria-expended="false" 
-     aria-contrpls="menu-container" data-menu-close>
+     <button type="button" class="menu-button" aria-expended="false" 
+     aria-controls="menu-container" data-menu-close>
       <svg aria-label="переключатель мобильного меню" width="40" height="40">
        <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_mobile"></use>
       </svg>

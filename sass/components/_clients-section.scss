@@ -1,6 +1,6 @@
 .section-clients {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding: 60px 0;
+  margin: 0;
 
   @media screen and (min-width: 1200px) {
     padding: 94px 0;
@@ -28,7 +28,6 @@
   }
 
   &__list {
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -36,6 +35,7 @@
     width: 480px;
 
     @media screen and (min-width: 768px) {
+      margin: auto;
       width: 768px;
     }
     @media screen and (min-width: 1200px) {
