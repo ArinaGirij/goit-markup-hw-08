@@ -32,9 +32,10 @@
     </svg>
    </button>
 
-   <div class="menu-container" data-menu>
+   <div class="menu-container" id="menu-container" data-menu>
     <div class="menu-mobile">
-     <button type="button" class="menu-container__button" data-menu-close>
+     <button type="button" class="menu-container__button" aria-expended="false" 
+     aria-contrpls="menu-container" data-menu-close>
       <svg aria-label="переключатель мобильного меню" width="40" height="40">
        <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_mobile"></use>
       </svg>
@@ -65,6 +66,7 @@
             >
           </li>
         </ul>
+    </div>
       </div>
     </header>
     <main>
