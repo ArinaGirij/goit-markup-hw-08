@@ -2191,6 +2191,7 @@ address {
   background-color: #ffffff;
   text-align: center;
   font-size: 20px;
+  width: 100%;
 }
 
 .menu-container.is-open {
@@ -2255,5 +2256,14 @@ address {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
