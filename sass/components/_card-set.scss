@@ -126,6 +126,7 @@
     color: $background-white;
   }
   &__cards {
+    flex-grow: 1;
     background-size: contain;
 
     padding-top: 20px;
