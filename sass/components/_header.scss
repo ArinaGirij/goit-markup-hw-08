@@ -130,6 +130,10 @@
   &__item:focus {
     fill: $accent-color;
   }
+
+  &__item.current {
+    color: $accent-color;
+  }
 }
 
 .header-contacts {
@@ -270,6 +274,7 @@
     @media screen and(min-width: 1200px) {
     }
   }
+
   .header-list__nav {
     @media screen and(min-width: 768px) {
       display: flex;
