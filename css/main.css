@@ -691,7 +691,6 @@ a {
 .team__item {
   text-align: center;
   padding-bottom: 30px;
-  background-color: var(--bg-1);
   border-radius: 0px 0px 4px 4px;
 }
 
